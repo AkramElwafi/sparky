@@ -4,7 +4,6 @@ from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from pyspark.sql.types import StructType, StructField, StringType, FloatType
 from pyspark.sql.functions import col
-import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
@@ -35,7 +34,7 @@ custom_schema = StructType([
     StructField("Net calorific value (LHV)", FloatType(), True),
 ])
 
-output_path = 'C:/Users/asus/Desktop/spark/sparkenv/generated_2millions_data.csv'
+output_path = r'sparky/build/workspace/data/generated_2millions_data.csv'
 df = spark.read.csv(output_path, header=True, schema=custom_schema)
 
 df = df.drop('biomass_id', 'biomass_name')

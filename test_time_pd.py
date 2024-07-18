@@ -2,7 +2,6 @@ import os
 import time
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
@@ -11,10 +10,10 @@ from tqdm import tqdm
 
 start_time = time.time()
 
-output_path = 'C:/Users/asus/Desktop/docker-sparker/spark-standalone-cluster-on-docker/build/workspace/data/generated_2millions_data.csv'
+output_path = r'sparky/build/workspace/data/cleaned_data.csv'
 df = pd.read_csv(output_path)
 
-df = df.drop(['ID', 'name'], axis=1)
+df = df.drop(['ID'], axis=1)
 
 columns = df.columns
 
