@@ -10,10 +10,10 @@ from tqdm import tqdm
 
 start_time = time.time()
 
-output_path = r'sparky/build/workspace/data/cleaned_data.csv'
-df = pd.read_csv(output_path)
+input_path = r'sparky/build/workspace/data/generated_2mill_data.csv'
+df = pd.read_csv(input_path)
 
-df = df.drop(['ID'], axis=1)
+df = df.drop(['ID', 'name'], axis=1)
 
 columns = df.columns
 

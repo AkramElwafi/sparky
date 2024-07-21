@@ -34,8 +34,8 @@ custom_schema = StructType([
     StructField("Net calorific value (LHV)", FloatType(), True),
 ])
 
-output_path = r'sparky/build/workspace/data/generated_2millions_data.csv'
-df = spark.read.csv(output_path, header=True, schema=custom_schema)
+input_path = r'sparky/build/workspace/data/generated_2mill_data.csv'
+df = spark.read.csv(input_path, header=True, schema=custom_schema)
 
 df = df.drop('biomass_id', 'biomass_name')
 
