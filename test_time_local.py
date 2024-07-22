@@ -1,3 +1,4 @@
+#code to calculate the execution time for processing using spark localy (3 cores)
 import os
 import time
 from pyspark.sql import SparkSession

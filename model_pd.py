@@ -1,3 +1,4 @@
+#code to generate rows (2 millions in this case)
 import os
 import time
 import pandas as pd
