@@ -1,5 +1,7 @@
 # Apache Spark Standalone Cluster on Docker
 
+# https://doi.org/10.1007/978-981-15-5558-9_5 (article comparing spark standalone cluster and yarn) /Launch Overheads of Spark Applications on Standalone and Hadoop YARN Clusters by   P. S. Janardhanan , Philip Samuel
+
 > The project was featured on an **[article](https://www.mongodb.com/blog/post/getting-started-with-mongodb-pyspark-and-jupyter-notebook)** at **MongoDB** official tech blog! :scream:
 
 > The project just got its own **[article](https://towardsdatascience.com/apache-spark-cluster-on-docker-ft-a-juyterlab-interface-418383c95445)** at **Towards Data Science** Medium blog! :sparkles:
